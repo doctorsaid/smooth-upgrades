@@ -1,4 +1,6 @@
 sudo: required
+dist: trusty
+# https://github.com/travis-ci/docker-sinatra/blob/master/Dockerfile
 language: python
 python: '2.7'
 script: do-release-upgrade -d -f DistUpgradeViewNonInteractive
