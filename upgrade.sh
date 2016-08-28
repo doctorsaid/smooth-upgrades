@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "y\n\n" | do-release-upgrade
+echo "y\n\n" | DEBIAN_FRONTEND=noninteractive do-release-upgrade
