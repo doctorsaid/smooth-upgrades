@@ -1,1 +1,1 @@
-# smooth-upgrades
+Tests `do-release-upgrade -d -f DistUpgradeViewNonInteractive`
