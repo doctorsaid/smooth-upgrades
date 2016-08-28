@@ -3,6 +3,6 @@ dist: trusty
 language: python
 python: '2.7'
 install: sudo apt-get install -y update-manager-core
-script: sh -c 'echo "y\n\n" | DEBIAN_FRONTEND=noninteractive do-release-upgrade -d -f DistUpgradeViewNonInteractive'
+script: bash upgrade.sh
 after_success:
 - bash <(curl -s https://codecov.io/bash)
