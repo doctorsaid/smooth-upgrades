@@ -3,6 +3,7 @@ dist: trusty
 # https://github.com/travis-ci/docker-sinatra/blob/master/Dockerfile
 language: python
 python: '2.7'
+install: sudo apt-get install -y update-manager-core
 script: sudo bash upgrade.sh
 after_success:
 - bash <(curl -s https://codecov.io/bash)
