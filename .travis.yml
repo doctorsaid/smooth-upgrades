@@ -3,6 +3,6 @@ dist: trusty
 # https://github.com/travis-ci/docker-sinatra/blob/master/Dockerfile
 language: python
 python: '2.7'
-script: echo "y\n\n" | sudo do-release-upgrade
+script: sudo upgrade.sh
 after_success:
 - bash <(curl -s https://codecov.io/bash)
